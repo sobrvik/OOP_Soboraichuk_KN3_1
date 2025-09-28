@@ -1,0 +1,15 @@
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/bin/Debug/net9.0/lab2v12
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/bin/Debug/net9.0/lab2v12.deps.json
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/bin/Debug/net9.0/lab2v12.runtimeconfig.json
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/bin/Debug/net9.0/lab2v12.dll
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/bin/Debug/net9.0/lab2v12.pdb
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.GeneratedMSBuildEditorConfig.editorconfig
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.AssemblyInfoInputs.cache
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.AssemblyInfo.cs
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.csproj.CoreCompileInputs.cache
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.sourcelink.json
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.dll
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/refint/lab2v12.dll
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.pdb
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/lab2v12.genruntimeconfig.cache
+/Users/viktorsobr/Documents/RFKIT/OOP-Soboraichuk/lab2v12/obj/Debug/net9.0/ref/lab2v12.dll
