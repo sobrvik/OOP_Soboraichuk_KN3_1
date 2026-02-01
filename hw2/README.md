@@ -1,47 +1,24 @@
-God Object та SRP
-1. Анти-патерн God Object
-God Object — це клас, який виконує забагато обовʼязків і централізує логіку всієї системи.
-Основні ознаки:
-багато різних відповідальностей в одному класі;
-великий розмір і складні методи;
-сильна залежність від інших модулів;
-складно тестувати та підтримувати;
-порушує принцип SRP.
-2. Приклад класу, що порушує SRP
+# HW2
+
+God Object — це анти-патерн, при якому один клас виконує забагато обовʼязків і фактично централізує логіку системи. Такий клас має низьку звʼязність, сильні залежності, його складно тестувати і змінювати, тому він зазвичай порушує принцип SRP (Single Responsibility Principle), згідно з яким клас повинен мати лише одну причину для змін. Приклад простого класу, що порушує SRP:
+
+```python
 class UserService:
     def register(self, email, password):
         if "@" not in email:
             raise ValueError("Invalid email")
-
-        password_hash = "hash:" + password
         print("Save user to database")
         print("Send welcome email")
-Порушення SRP:
-Клас одночасно:
-валідовує дані;
-хешує пароль;
-працює з БД;
-відправляє повідомлення.
-3. Рефакторинг з дотриманням SRP
-class UserValidator:
-    def validate(self, email):
-        if "@" not in email:
-            raise ValueError("Invalid email")
+У цьому прикладі один клас одночасно відповідає за валідацію даних, збереження користувача та відправку повідомлень, тобто має кілька різних відповідальностей. Для дотримання SRP клас можна відрефакторити, винісши валідацію в окрему функцію, щоб UserService відповідав лише за виконання сценарію реєстрації:
 
-
-class PasswordHasher:
-    def hash(self, password):
-        return "hash:" + password
-
+def validate_email(email):
+    if "@" not in email:
+        raise ValueError("Invalid email")
 
 class UserService:
-    def __init__(self, validator, hasher):
-        self.validator = validator
-        self.hasher = hasher
-
     def register(self, email, password):
-        self.validator.validate(email)
-        password_hash = self.hasher.hash(password)
+        validate_email(email)
         print("Save user to database")
-Результат:
-Кожен клас має одну відповідальність, код простіший, легше тестується і не перетворюється на God Object.
+        print("Send welcome email")
+
+Після такого рефакторингу відповідальності розділені, код стає простішим і клас не перетворюється на God Object.
