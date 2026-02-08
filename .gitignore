@@ -1,1 +1,17 @@
+# .NET
+bin/
+obj/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+
+# macOS
 .DS_Store
+
+# Logs
+*.log
+
+# User settings
+*.user
+*.suo
